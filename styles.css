@@ -75,9 +75,8 @@ h1,h2,h3,h4,h5,h6{
     min-width:0
 }
 [class*=__container]{
-    max-width:81.25rem;
-    -webkit-box-sizing:content-box;
-    box-sizing:content-box;
+    max-width:1440px;
+    box-sizing:border-box;
     margin:0 auto;
     padding:0 .9375rem
 }
@@ -559,8 +558,10 @@ body{
         -ms-transform:rotate(180deg);
         transform:rotate(180deg)
     }
-    .no-webp .header-slider{
-        background-image:url(../img/cosmetics.png)
+    .header-slider{
+        background-image:url("img/header-bg.webp");
+        max-width: 1440px;
+        box-sizing: border-box
     }
     .header-slider{
         background-repeat:no-repeat;
