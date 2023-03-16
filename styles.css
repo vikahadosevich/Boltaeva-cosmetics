@@ -239,14 +239,20 @@ body{
 .icon-menu{
     display:none
 }
-.header{
-    position:fixed;
+.header_index{
     background-color:#171717;
     z-index:10;
     width:100%;
     padding:10px 0 10px;
     -webkit-box-shadow:0 0 10px #171717;
     box-shadow:0 0 10px #171717
+}
+.header{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    color: #555555;
+    position: static;
+    border-bottom: 1px solid #5555552f;
 }
 .header__container{
     position: absolute;
@@ -331,11 +337,21 @@ body{
 .menu__item:nth-child(1){
     margin-left:0
 }
+.menu__links{
+    font-size:14px;
+    line-height:1.4;
+    font-weight:400;
+    color:#FFFFFF;
+    -webkit-transition:.4s;
+    -o-transition:.4s;
+    transition:.4s
+}
+
 .menu__link{
     font-size:14px;
     line-height:1.4;
     font-weight:400;
-    color:#fff;
+    color:#555555;
     -webkit-transition:.4s;
     -o-transition:.4s;
     transition:.4s
@@ -351,11 +367,18 @@ body{
     -o-transition:10s;
     transition:10s
 }
+.header-item__links{
+    font-size:14px;
+    line-height:1.4;
+    font-weight:400;
+    color:#FFFFFF
+}
+
 .header-item__link{
     font-size:14px;
     line-height:1.4;
     font-weight:400;
-    color:#fff
+    color:#555555;
 }
 .header-item__link path{
     -webkit-transition:.4s;
@@ -893,7 +916,6 @@ body{
     }
     .cosmetics{
         background-color:#f5ece3;
-        padding-top:69px
     }
     .cosmetics__title{
         margin-top:62px;
@@ -1582,8 +1604,6 @@ body{
         font-size:16px;
         line-height:1.2;
         display:inline-block;
-        padding-left:27px;
-        margin-bottom:63px
     }
     .users-order{
         position:relative
