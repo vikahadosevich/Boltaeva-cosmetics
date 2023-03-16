@@ -242,8 +242,6 @@ body{
 .header_index{
     z-index:10;
     width:100%;
-    -webkit-box-shadow:0 0 10px #171717;
-    box-shadow:0 0 10px #171717
 }
 .header{
     padding-top: 70px;
