@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6{
     min-width:0
 }
 [class*=__container]{
-    max-width:1440px;
+    max-width: 1440px;
     box-sizing:border-box;
     margin:0 auto;
     padding: 0 70px;
@@ -243,6 +243,20 @@ body{
     z-index:10;
     width:100%;
 }
+.header__container{
+    position: absolute;
+    width: 100%;
+    padding: 0 70px;
+    top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between
+}
 .header{
     padding-top: 70px;
     padding-bottom: 50px;
@@ -250,24 +264,7 @@ body{
     position: static;
     border-bottom: 1px solid #5555552f;
 }
-.header__container{
-    position: absolute;
-    width: 100%;
-    padding: 0 70px;
-    top: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
+
 .header__logo{
     margin-left:-24px
 }
@@ -804,9 +801,11 @@ body{
         padding:200px 0 205px
     }
     .about-us__container{
-        color:#555
-    
+        color:#555;
+        background-image: url(img/bg-bolt.webp);
+        background-repeat: no-repeat;
     }
+    
     .about-us__desc{
         max-width:492px;
         margin-left:auto
@@ -867,24 +866,13 @@ body{
         max-width:600px
     }
     .gallery__link{
-        font-size:20px;
-        line-height:1.2;
+        display: inline-block;
+        padding: 28px 100px;
+        background-color: #EEE4DA;
+        border-radius: 38px;
         color:#555;
-        max-width:600px;
-        padding:25px 95px 25px 124px;
-        border-radius:66px;
-        border:3px solid transparent;
-        background-color:#eee4da;
-        -webkit-transition:.5s;
-        -o-transition:.5s;
-        transition:.5s;
-        position:relative
     }
-    .gallery__link svg{
-        position:absolute;
-        top:32px;
-        left:99px
-    }
+   
     .gallery__link:hover{
         background-color:none;
         color:#af937c;
@@ -2937,7 +2925,7 @@ button.swiper-pagination-bullet{
         display:none
     }
 }
-@media (max-width:47.99875em){
+@media (width:47.99875em){
     .icon-menu{
         display:block;
         position:relative;
